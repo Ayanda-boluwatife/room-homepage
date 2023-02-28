@@ -1,0 +1,228 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.one{
+    display: flex;
+}
+
+.two{
+    display: flex;
+    background: url(./images/desktop-image-hero-1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.scroll{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* position: absolute; */
+    bottom: 0;
+    /* margin-left: 695px; */
+}
+
+.two li a{
+    text-decoration: none;
+    color: white;
+}
+
+.two li{
+    list-style: none;
+}
+
+.two nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.fourty li a{
+    font-weight: 700;
+}
+.fourty li a::after{
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.fourty li a::after:hover{
+    width: 20%;
+}
+
+nav ol{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+    gap: 20px;
+}
+
+.three a{
+    text-decoration: none;
+    color: black;
+}
+
+.three h5{
+    cursor: pointer;
+}
+
+.three p{
+    color: darkgray;
+    font-size: 20px;
+}
+
+.three h5:hover{
+    color: darkgray;
+}
+
+.four{
+    display: flex;
+}
+
+.six{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    /* padding: 20px; */
+}
+
+.six h1{
+    font-size: 25px;
+}
+
+.six p{
+    color: darkgrey;
+    position: relative;
+}
+
+.twenty{
+    display: none;
+}
+
+.two button{
+    display: none;
+}
+
+.toggle::before{
+    content: "\2630";
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.active::before{
+    content: "\2613";
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media  screen and (max-width:900px) {
+    .one{
+        flex-direction: column;
+        width: 100%;
+    }
+    .two button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        padding: 15px 20px;
+        border: none;
+    }
+    .three h1{
+        font-size: 30px;
+    }
+    .three{
+      width: 100%;
+      padding: 40px;
+      height: 100vh;
+      gap: 40px;
+      font-size: 25px;
+    }
+    .four{
+        flex-direction: column;
+        width: 100%;
+    }
+    .five img{
+        display: none;
+    }
+    .five{
+        background: url(./images/image-about-dark.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+    }
+    .six{
+        height: 100vh;
+        gap: 40px;
+        padding: 40px;
+    }
+    .six p{
+        font-size: 20px;
+    }
+    .seven img{
+        display: none;
+    }
+    .seven{
+        background: url(./images/image-about-light.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh; 
+    }
+    .twentytwo li a{
+        text-decoration: none;
+        color: white;
+    }
+    .twentytwo li{
+        list-style: none;
+    }
+    .twentytwo:hover{
+        font-size: 20px;
+    }
+    .fourty{
+        display: none;
+    }
+    .toggle{
+        font-weight: 800;
+        font-size: 30px;
+        color: white;
+        background-color: dimgray;
+        border-radius: 10px;
+    }
+    .show{
+        display: flex;
+    }
+    .none{
+        display: none;
+    }
+}
+
